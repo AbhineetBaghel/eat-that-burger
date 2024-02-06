@@ -48,16 +48,10 @@
 
   <body>
 
-<!--     <audio controls autoplay>
-    <source src="1.mp3" type="audio/mpeg">
-    </audio> -->
+
 
     
     <div id="player">
-
-      <audio controls autoplay>
-    <source src="1.mp3" type="audio/mpeg">
-    </audio>
       
       <div id="virtual-gamepad">
         <button
@@ -123,6 +117,12 @@
         >
           Start
         </button>
+
+          <audio controls autoplay style="height: 200px; width: 100px;">
+        <source src="1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+        
         <button
           class="select"
           ontouchstart="event.preventDefault();document.querySelector('canvas').dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',code:'Enter'}));"
